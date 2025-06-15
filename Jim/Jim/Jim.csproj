@@ -9,9 +9,4 @@
   <ItemGroup>
     <ProjectReference Include="../../Fred/Fred/Fred.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Update="@(ProjectReference)">
-        <Properties>uao=true</Properties>
-    </ProjectReference>
-  </ItemGroup>
 </Project>
