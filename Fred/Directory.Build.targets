@@ -1,0 +1,5 @@
+<Project>
+  <Target Name="GlobalPreviewStep" BeforeTargets="BeforeBuild">
+    <Message Text="🔍 uao: $(uao), UseArtifactsOutput:$(UseArtifactsOutput) Building $(MSBuildProjectName): UseArtifactsOutput: $(UseArtifactsOutput) ArtifactsPath=$(ArtifactsPath)" Importance="High" />
+  </Target>
+</Project>

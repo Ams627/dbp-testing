@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <UseArtifactsOutput>true</UseArtifactsOutput>
+    <PJim>3.14</PJim>
+  </PropertyGroup>
+  <Target Name="BeforeNuGetRestore" BeforeTargets="CollectPackageReferences">
+    <Message Importance="high" Text=">>> PROJECT: $(MSBuildProjectFile)!" />  
+    <Message Importance="high" Text=">>> Pre-restore step running from props: SolutionDir is $(SolutionDir) - uao is $(uao)!" />
+    <Message Importance="high" Text=">>> UseArtifactsOutput: $(UseArtifactsOutput)!" />
+    <Message Importance="high" Text=">>> ArtifactsPath: $(UseArtifactsPath)!" />
+    <Message Importance="high" Text=">>> PJim: $(PJim)!" />
+  </Target>
+</Project>
