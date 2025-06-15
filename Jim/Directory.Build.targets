@@ -1,5 +1,6 @@
 <Project>
   <Target Name="GlobalPreviewStep" BeforeTargets="BeforeBuild">
-    <Message Text="🔍 Preview: Building $(MSBuildProjectName): UseArtifactsOutput: $(UseArtifactsOutput) ArtifactsPath=$(ArtifactsPath) ArtifactsPivot=$(ArtifactsPivot)" Importance="High" />
+    <Message Importance="high" Text=">>>(BUILD) UseArtifactsOutput: $(UseArtifactsOutput)!" />
+    <Message Importance="high" Text=">>>(BUILD) ArtifactsPath: $(ArtifactsPath)!" />
   </Target>
 </Project>
