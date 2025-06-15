@@ -1,16 +1,16 @@
 ﻿<Project Hello="World">
   <PropertyGroup>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(SolutionDir)' != '' and $(SolutionDir.Contains('Jim'))">
+  <PropertyGroup Condition="'$(SolutionDir)' != '' and $(SolutionDir.ToLower.Contains('Jim'))">
     <UseArtifactsOutput>true</UseArtifactsOutput>
     <ArtifactsPath>$(SolutionDir)artifacts</ArtifactsPath>
   </PropertyGroup>
   <Target Name="BeforeNuGetRestore" BeforeTargets="CollectPackageReferences">
-    <Message Importance="high" Text="&gt;&gt;&gt; PROJECT2: $(MSBuildProjectFile)!" />
-    <Message Importance="high" Text="&gt;&gt;&gt; Pre-restore step running from $(MSBuildThisFileFullPath): SolutionDir is $(SolutionDir) - uao is $(uao)!" />
-    <Message Importance="high" Text="&gt;&gt;&gt; UseArtifactsOutput: $(UseArtifactsOutput)!" />
-    <Message Importance="high" Text="&gt;&gt;&gt; ArtifactsPath: $(ArtifactsPath)!" />
-    <Message Importance="high" Text="&gt;&gt;&gt; Wibble: $(Wibble)!" />
-    <Message Importance="high" Text="&gt;&gt;&gt; Double: $(Double)!" />
+    <Message Importance="high" Text=">>> PROJECT2: $(MSBuildProjectFile)!" />
+    <Message Importance="high" Text=">>> Pre-restore step running from $(MSBuildThisFileFullPath): SolutionDir is $(SolutionDir) - uao is $(uao)!" />
+    <Message Importance="high" Text=">>> UseArtifactsOutput: $(UseArtifactsOutput)!" />
+    <Message Importance="high" Text=">>> ArtifactsPath: $(ArtifactsPath)!" />
+    <Message Importance="high" Text=">>> Wibble: $(Wibble)!" />
+    <Message Importance="high" Text=">>> Double: $(Double)!" />
   </Target>
 </Project>
