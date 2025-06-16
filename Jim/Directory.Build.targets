@@ -1,6 +1,6 @@
 <Project>
   <Target Name="GlobalPreviewStep" BeforeTargets="BeforeBuild">
-    <Message Importance="high" Text=">>>(BUILD) UseArtifactsOutput: $(UseArtifactsOutput)!" />
-    <Message Importance="high" Text=">>>(BUILD) ArtifactsPath: $(ArtifactsPath)!" />
+<!--    <Message Importance="high" Text=">>>(BUILD) UseArtifactsOutput: $(UseArtifactsOutput)!" />
+    <Message Importance="high" Text=">>>(BUILD) ArtifactsPath: $(ArtifactsPath)!" /> -->
   </Target>
 </Project>

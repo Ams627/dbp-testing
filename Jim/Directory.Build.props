@@ -10,5 +10,6 @@
     <Message Importance="high" Text=">>> UseArtifactsOutput: $(UseArtifactsOutput)!" />
     <Message Importance="high" Text=">>> ArtifactsPath: $(ArtifactsPath)!" />
     <Message Importance="high" Text=">>> PJim: $(PJim)!" />
+    <Message Importance="high" Text=">>> Pint: $(Pint)!" /> 
   </Target>
 </Project>
